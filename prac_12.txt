@@ -1,4 +1,4 @@
-def add(a, b):
+def add(a, b):  ## 2025. 10. 22 [ 18 : 00 ~ 18 : 50 ]
     return a + b
 result = add(10, 5)
 print(f"10 + 5 = {result}")

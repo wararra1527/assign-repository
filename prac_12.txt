@@ -1,4 +1,4 @@
-def add(a, b):
+def add(a, b):     ##branch practice
     return a + b
 result = add(10, 5)
 print(f"10 + 5 = {result}")

@@ -1,4 +1,10 @@
+# Lasso
+from sklearn.linear_model import Ridge, Lasso, ElasticNet
+
+
 ls = Lasso(alpha = 1, random_state = 0)
+
+
 ls.fit(X, y)
 ls.intercept_
 # Out[16]: 43.99118131112317

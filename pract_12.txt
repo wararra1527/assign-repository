@@ -1,0 +1,16 @@
+import seaborn as sns
+df = sns.load_dataset('mpg')
+y = df['mpg']
+X = df[['cylinders', 'weight', 
+        'acceleration', 'displacement']]
+# 주의!! 주어진 자료에 결측이 없어야 함
+from sklearn.linear_model \
+    import Ridge, Lasso, ElasticNet
+rg = Ridge(alpha = 1)
+rg.fit(X, y)
+rg.intercept_
+# Out[10]: 41.857231642104026
+rg.coef_
+# Out[11]: array([-0.2568729 , -0.00615513,  0.17502912, -0.00715003])
+rg.score(X, y)
+# Out[18]: 0.7006973647192205

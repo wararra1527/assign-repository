@@ -1,7 +1,0 @@
-## Lasso practice
-
-import seaborn as sns
-df = sns.load_dataset('mpg')
-y = df['mpg']
-X = df[['cylinders', 'weight', 
-        'acceleration', 'displacement']]
